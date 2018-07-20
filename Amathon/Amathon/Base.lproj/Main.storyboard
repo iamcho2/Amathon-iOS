@@ -620,7 +620,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goStar:" destination="MZP-dF-baZ" eventType="touchUpInside" id="Dt5-Zd-a0h"/>
-                                    <segue destination="jqa-20-pt0" kind="presentation" id="R4M-x0-tme"/>
                                 </connections>
                             </button>
                         </subviews>
