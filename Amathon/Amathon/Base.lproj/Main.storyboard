@@ -207,7 +207,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="smE-ue-6Bh" secondAttribute="bottom" constant="16" id="Aqc-Rp-hFB"/>
-                                    <constraint firstAttribute="height" constant="53" id="DBX-BY-dFi"/>
                                     <constraint firstItem="smE-ue-6Bh" firstAttribute="leading" secondItem="UcG-27-3ZJ" secondAttribute="leading" constant="74" id="g61-Bn-bou"/>
                                     <constraint firstItem="vWL-bs-ylL" firstAttribute="leading" secondItem="smE-ue-6Bh" secondAttribute="trailing" constant="23" id="ogo-0z-PzU"/>
                                     <constraint firstAttribute="bottom" secondItem="vWL-bs-ylL" secondAttribute="bottom" constant="16" id="riO-yb-j5h"/>
