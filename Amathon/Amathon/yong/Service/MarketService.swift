@@ -18,23 +18,29 @@ struct MarketService: APIService{
         
         let body: [String: Any] = [
             "lat" : lat,
-            "lon" : lon
+            "lon" : lon,
+            "orderby" : "distance",
+            "searchKeyword" : "일식"
         ]
         
-        Alamofire.request(URL, method: .get, parameters: body, encoding: JSONEncoding.default, headers: nil).responseData() { res in
+        Alamofire.request(URL, method: .get, parameters: body, encoding: URLEncoding.queryString, headers: nil).responseData() { res in
             switch res.result{
             case .success:
                 
+                print("00000000000000000000000000000000")
+                
                 if let value = res.result.value{
                     if let message = JSON(value)["message"].string{
-                        if message == "success"{ // 주문내역 상세보기 성공
+                        if message == "SUCCESS"{
+                            print("1111111111111111111111111111111111")
                             
+                            print(JSON(value)["restaurants"][0])
                             
                             let decoder = JSONDecoder()
                             do{
                                 let marketdata = try decoder.decode(MarketData.self, from: value)
                                 
-                                completion(marketdata.result)
+                                completion(marketdata.restaurants)
                                 
                             } catch {
                                 print("catch.....")
