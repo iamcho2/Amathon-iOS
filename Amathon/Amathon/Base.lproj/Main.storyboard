@@ -660,10 +660,10 @@
             </objects>
             <point key="canvasLocation" x="4140" y="664.31784107946032"/>
         </scene>
-        <!--View Controller-->
+        <!--Rating View Controller-->
         <scene sceneID="o0c-kP-Iod">
             <objects>
-                <viewController id="jqa-20-pt0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RatingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jqa-20-pt0" customClass="RatingViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXW-EZ-t1C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -680,30 +680,145 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIY-yc-PXZ">
-                                <rect key="frame" x="270" y="282" width="52" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-9A-ncR">
+                                <rect key="frame" x="20" y="290" width="26" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="맛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-fB-6Fs">
-                                <rect key="frame" x="20" y="289" width="26" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-eB-Ln6">
+                                <rect key="frame" x="20" y="426" width="52" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVf-fg-TRb" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="200" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3lm-Tv-MyL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-RM-Umg" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="336" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oUN-FW-HyK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-jO-ohH" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="472" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7TT-2W-Mcu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.90001075870000002" blue="0.10669456319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-2q-dQI">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZgG-rv-Ezc"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="redColor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didConfirmClicked:" destination="jqa-20-pt0" eventType="touchUpInside" id="EaM-q8-xL7"/>
+                                    <segue destination="04u-D7-B0N" kind="show" id="nmJ-jr-MR6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TLw-Zv-kyN" firstAttribute="trailing" secondItem="pVf-fg-TRb" secondAttribute="trailing" constant="20" id="0uY-xk-6jP"/>
+                            <constraint firstItem="gNa-9A-ncR" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="1JE-KE-f94"/>
+                            <constraint firstItem="KzE-eB-Ln6" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="6Ha-oW-7Qm"/>
+                            <constraint firstItem="KzE-eB-Ln6" firstAttribute="top" secondItem="uhR-RM-Umg" secondAttribute="bottom" constant="30" id="9AG-al-zas"/>
+                            <constraint firstItem="TLw-Zv-kyN" firstAttribute="trailing" secondItem="pdu-2q-dQI" secondAttribute="trailing" id="ElE-Ui-yS0"/>
+                            <constraint firstItem="pVf-fg-TRb" firstAttribute="centerX" secondItem="TLw-Zv-kyN" secondAttribute="centerX" id="FrL-v8-x5G"/>
+                            <constraint firstItem="uhR-RM-Umg" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="HUS-aE-4G3"/>
+                            <constraint firstItem="pVf-fg-TRb" firstAttribute="leading" secondItem="jma-oj-Dt4" secondAttribute="leading" id="L4j-lN-WWf"/>
+                            <constraint firstItem="h6O-jO-ohH" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="Ohy-9p-CPQ"/>
                             <constraint firstItem="9jp-em-irJ" firstAttribute="leading" secondItem="TLw-Zv-kyN" secondAttribute="leading" constant="20" id="Q7a-yH-Qfi"/>
+                            <constraint firstItem="TLw-Zv-kyN" firstAttribute="trailing" secondItem="uhR-RM-Umg" secondAttribute="trailing" constant="20" id="TeA-oI-eZf"/>
+                            <constraint firstItem="h6O-jO-ohH" firstAttribute="top" secondItem="KzE-eB-Ln6" secondAttribute="bottom" constant="10" id="UyH-1T-aWa"/>
+                            <constraint firstItem="pdu-2q-dQI" firstAttribute="leading" secondItem="TLw-Zv-kyN" secondAttribute="leading" id="dO9-dY-1u0"/>
+                            <constraint firstItem="TLw-Zv-kyN" firstAttribute="trailing" secondItem="h6O-jO-ohH" secondAttribute="trailing" constant="20" id="dqP-S5-DSt"/>
+                            <constraint firstItem="TLw-Zv-kyN" firstAttribute="bottom" secondItem="pdu-2q-dQI" secondAttribute="bottom" id="ef2-k2-I1Q"/>
                             <constraint firstItem="jma-oj-Dt4" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="hSU-nS-NEx"/>
-                            <constraint firstItem="q6o-fB-6Fs" firstAttribute="leading" secondItem="9jp-em-irJ" secondAttribute="leading" id="mRX-uV-qSe"/>
+                            <constraint firstItem="pdu-2q-dQI" firstAttribute="centerX" secondItem="MXW-EZ-t1C" secondAttribute="centerX" id="kI4-po-6UP"/>
+                            <constraint firstItem="gNa-9A-ncR" firstAttribute="top" secondItem="pVf-fg-TRb" secondAttribute="bottom" constant="30" id="lDD-5C-VK0"/>
+                            <constraint firstItem="pVf-fg-TRb" firstAttribute="top" secondItem="jma-oj-Dt4" secondAttribute="bottom" constant="10" id="ld7-W8-afe"/>
                             <constraint firstItem="jma-oj-Dt4" firstAttribute="top" secondItem="9jp-em-irJ" secondAttribute="bottom" constant="30" id="pSW-qG-TEC"/>
+                            <constraint firstItem="uhR-RM-Umg" firstAttribute="top" secondItem="gNa-9A-ncR" secondAttribute="bottom" constant="10" id="r1B-hj-4j8"/>
                             <constraint firstItem="9jp-em-irJ" firstAttribute="top" secondItem="TLw-Zv-kyN" secondAttribute="top" constant="20" id="s5b-ws-3q6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TLw-Zv-kyN"/>
                     </view>
+                    <connections>
+                        <outlet property="interior" destination="pVf-fg-TRb" id="ePj-8M-Che"/>
+                        <outlet property="price" destination="h6O-jO-ohH" id="deO-6v-XFy"/>
+                        <outlet property="taste" destination="uhR-RM-Umg" id="ydZ-WU-XJB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZd-in-ars" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -720,7 +835,7 @@
         <image name="click_1" width="245" height="53"/>
         <image name="map_02" width="269" height="121"/>
         <image name="pin" width="38" height="43"/>
-        <image name="recommend_01" width="181" height="212"/>
+        <image name="recommend_01" width="90" height="106"/>
         <image name="recommend_02" width="89" height="94"/>
         <image name="recommend_03" width="89" height="94"/>
         <image name="recommend_04" width="90" height="95"/>
@@ -731,6 +846,7 @@
         <image name="recommend_10" width="89" height="97"/>
         <image name="recommend_11" width="90" height="92"/>
         <image name="red-dot-" width="13" height="15"/>
+        <image name="redColor" width="2" height="2"/>
         <image name="star" width="32" height="32"/>
         <image name="yellow-dot" width="13" height="15"/>
     </resources>

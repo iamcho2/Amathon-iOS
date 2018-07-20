@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84278724210278AB00ABC452 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84278723210278AB00ABC452 /* RatingViewController.swift */; };
 		8439B37021023D85005FAD17 /* googleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439B36F21023D85005FAD17 /* googleMapViewController.swift */; };
 		84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCEC82101FF3600113948 /* MapViewController.swift */; };
 		C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		4DA6D20723F1297B0391CA75 /* Pods-Amathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.debug.xcconfig"; sourceTree = "<group>"; };
+		84278723210278AB00ABC452 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		8439B36F21023D85005FAD17 /* googleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMapViewController.swift; sourceTree = "<group>"; };
 		84BBCEC82101FF3600113948 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			children = (
 				84BBCEC82101FF3600113948 /* MapViewController.swift */,
 				8439B36F21023D85005FAD17 /* googleMapViewController.swift */,
+				84278723210278AB00ABC452 /* RatingViewController.swift */,
 			);
 			path = choyi;
 			sourceTree = "<group>";
@@ -298,12 +301,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Amathon/Pods-Amathon-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -325,6 +330,7 @@
 				CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */,
 				84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */,
 				CC2D662521023E8B00ABEE9E /* Market.swift in Sources */,
+				84278724210278AB00ABC452 /* RatingViewController.swift in Sources */,
 				CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */,
 				CC2D663021026BDD00ABEE9E /* MainCollectionViewCell.swift in Sources */,
 				8439B37021023D85005FAD17 /* googleMapViewController.swift in Sources */,
