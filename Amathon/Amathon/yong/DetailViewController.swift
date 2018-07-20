@@ -31,7 +31,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        marketImage.kf.setImage(with: URL(string: m_image),placeholder: UIImage())
+        //marketImage.kf.setImage(with: URL(string: m_image),placeholder: UIImage())
         marketName.text = m_name
         marketAddress.text = m_address
         marketCategory.text = m_category
