@@ -13,6 +13,11 @@
 		CC08AD4921020657006CB8F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08AD4821020657006CB8F3 /* HomeViewController.swift */; };
 		CC2D661E2102149200ABEE9E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661D2102149200ABEE9E /* RecommendViewController.swift */; };
 		CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */; };
+		CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D66212102294C00ABEE9E /* SearchViewController.swift */; };
+		CC2D662521023E8B00ABEE9E /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662421023E8B00ABEE9E /* Market.swift */; };
+		CC2D662721023F6D00ABEE9E /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662621023F6D00ABEE9E /* MarketData.swift */; };
+		CC2D662A2102402100ABEE9E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D66292102402100ABEE9E /* APIService.swift */; };
+		CC2D662C2102404F00ABEE9E /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662B2102404F00ABEE9E /* MarketService.swift */; };
 		CC3666F22101FF10002681DE /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */; };
 		CC3666F32101FF10002681DE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */; };
 		CC3666F42101FF10002681DE /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666F02101FF0E002681DE /* NanumSquareB.ttf */; };
@@ -33,6 +38,11 @@
 		CC08AD4821020657006CB8F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC2D661D2102149200ABEE9E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
+		CC2D66212102294C00ABEE9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CC2D662421023E8B00ABEE9E /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		CC2D662621023F6D00ABEE9E /* MarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
+		CC2D66292102402100ABEE9E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CC2D662B2102404F00ABEE9E /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
 		CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
 		CC3666F02101FF0E002681DE /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
@@ -73,6 +83,24 @@
 				C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC2D662321023E5600ABEE9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC2D662421023E8B00ABEE9E /* Market.swift */,
+				CC2D662621023F6D00ABEE9E /* MarketData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC2D66282102400B00ABEE9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC2D66292102402100ABEE9E /* APIService.swift */,
+				CC2D662B2102404F00ABEE9E /* MarketService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CC6150452101C46C004D1F1D = {
@@ -121,9 +149,12 @@
 		CC6150642101CC6A004D1F1D /* yong */ = {
 			isa = PBXGroup;
 			children = (
+				CC2D66282102400B00ABEE9E /* Service */,
+				CC2D662321023E5600ABEE9E /* Model */,
 				CC08AD4821020657006CB8F3 /* HomeViewController.swift */,
 				CC2D661D2102149200ABEE9E /* RecommendViewController.swift */,
 				CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */,
+				CC2D66212102294C00ABEE9E /* SearchViewController.swift */,
 			);
 			path = yong;
 			sourceTree = "<group>";
@@ -239,11 +270,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Amathon/Pods-Amathon-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,13 +313,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2D662C2102404F00ABEE9E /* MarketService.swift in Sources */,
 				CC6150542101C46C004D1F1D /* ViewController.swift in Sources */,
+				CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */,
 				84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */,
+				CC2D662521023E8B00ABEE9E /* Market.swift in Sources */,
 				CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */,
 				8439B37021023D85005FAD17 /* googleMapViewController.swift in Sources */,
 				CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */,
+				CC2D662A2102402100ABEE9E /* APIService.swift in Sources */,
 				CC08AD4921020657006CB8F3 /* HomeViewController.swift in Sources */,
 				CC2D661E2102149200ABEE9E /* RecommendViewController.swift in Sources */,
+				CC2D662721023F6D00ABEE9E /* MarketData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
