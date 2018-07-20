@@ -1,8 +1,8 @@
 //
-//  MapViewController.swift
+//  googleMapViewController.swift
 //  Amathon
 //
-//  Created by admin on 2018. 7. 20..
+//  Created by admin on 2018. 7. 21..
 //  Copyright © 2018년 장한솔. All rights reserved.
 //
 
@@ -10,13 +10,23 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class MapViewController: UIViewController {
-    @IBOutlet weak var selectionView: UIView!
-    var isOpen = true
-    
+class googleMapViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let camera = GMSCameraPosition.camera(withLatitude: 37.55, longitude: 126.97, zoom: 15.0)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.settings.myLocationButton = true
+        view = mapView
+        
+        // Creates a marker in the center of the map.
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 37.55, longitude: 126.97)
+        marker.title = "Seoul"
+        marker.snippet = "Korea"
+        marker.map = mapView
+        
         // Do any additional setup after loading the view.
     }
 
@@ -35,19 +45,5 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func arrowClicked(_ sender: Any) {
-        if isOpen == false {
-            selectionView.heightAnchor.constraint(equalToConstant: 0).isActive = false
-            selectionView.heightAnchor.constraint(equalToConstant: 53).isActive = true
-            
-                isOpen = true
-        }else{
-            selectionView.heightAnchor.constraint(equalToConstant: 53).isActive = false
-            selectionView.heightAnchor.constraint(equalToConstant: 0).isActive = true
-            
-                isOpen = false
-        }
-    }
-    
-    
+
 }
