@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class googleMapViewController: UIViewController {
+class googleMapViewController: UIViewController, GMSMapViewDelegate {
     
     var marketArr = [Market]()
     var mapView: GMSMapView!
@@ -21,6 +21,7 @@ class googleMapViewController: UIViewController {
         let camera = GMSCameraPosition.camera(withLatitude: 37.4923661, longitude: 127.0205431, zoom: 15.0)
         mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         mapView.settings.myLocationButton = true
+        mapView.delegate = self
         view = mapView
         
         // Creates a marker in the center of the map.
@@ -75,6 +76,10 @@ class googleMapViewController: UIViewController {
             marker.map = self.mapView
         }
     }
-
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNaviVC")
+        self.present(mainVC, animated: true, completion: nil)
+    }
 
 }
