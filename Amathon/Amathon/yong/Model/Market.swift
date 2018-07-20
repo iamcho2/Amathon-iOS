@@ -16,5 +16,10 @@ struct Market: Codable{
     var category: String?
     var phoneNum: String?
     var address: String?
+    var rating: Rating
     var description: String?
+}
+
+struct Rating: Codable{
+    var totalRating: Double
 }

@@ -60,6 +60,18 @@ class googleMapViewController: UIViewController {
             marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             marker.title = arr[i].name
             marker.snippet = arr[i].address
+            
+            let rating = arr[i].rating.totalRating
+            if rating >= 0.0 && rating <= 2.0 {
+                marker.icon = GMSMarker.markerImage(with: .gray)
+            } else if rating <= 3.0 {
+                marker.icon = GMSMarker.markerImage(with: .blue)
+            } else if rating <= 4.0 {
+                marker.icon = GMSMarker.markerImage(with: .yellow)
+            }else {
+                marker.icon = GMSMarker.markerImage(with: .red)
+            }
+                
             marker.map = self.mapView
         }
     }
