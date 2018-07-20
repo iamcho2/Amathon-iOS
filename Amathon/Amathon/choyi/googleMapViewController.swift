@@ -43,7 +43,7 @@ class googleMapViewController: UIViewController {
     }
     
     func getMarket(){
-        MarketService.market(lat: "37.4923661", lon: "127.0205431") { (arr) in
+        MarketService.market(lat: "37.4923661", lon: "127.0205431", orderby: "일식") { (arr) in
             self.marketArr = arr
             
             self.setMarker(arr: self.marketArr)
