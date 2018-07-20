@@ -9,12 +9,12 @@
 import Foundation
 
 struct Market: Codable{
+    var serialNum: Int
     var name: String
     var lat: String
     var lon: String
-    var category: String
-    var rating: Double
-    var phoneNum: String
-    var address: String
-    var description: String
+    var category: String?
+    var phoneNum: String?
+    var address: String?
+    var description: String?
 }

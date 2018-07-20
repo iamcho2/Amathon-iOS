@@ -9,5 +9,5 @@
 import Foundation
 
 struct MarketData: Codable{
-    var result: [Market]
+    var restaurants: [Market]
 }
