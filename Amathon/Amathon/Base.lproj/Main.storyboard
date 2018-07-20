@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--라라라라라-->
+        <!--Food Of Galaxy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,7 +81,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="라라라라라" id="Yky-Bp-8OI"/>
+                    <navigationItem key="navigationItem" title="Food Of Galaxy" id="Yky-Bp-8OI"/>
                     <connections>
                         <outlet property="collectionView" destination="IDV-Xw-O6C" id="URb-8k-ih5"/>
                     </connections>
@@ -134,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="1606" y="-361"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Food Of Galaxy-->
         <scene sceneID="K19-RX-2o5">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0J8-ne-Cut" customClass="MapViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -291,7 +291,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i74-iW-2l9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="D6u-Pd-95E"/>
+                    <navigationItem key="navigationItem" title="Food Of Galaxy" id="D6u-Pd-95E"/>
                     <connections>
                         <outlet property="heightConstraint" destination="Sbn-Gn-BV6" id="ywQ-WQ-8nD"/>
                         <outlet property="selectionView" destination="UcG-27-3ZJ" id="2Wb-Xx-Isq"/>
@@ -307,7 +307,7 @@
             </objects>
             <point key="canvasLocation" x="2565.5999999999999" y="422.33883058470769"/>
         </scene>
-        <!--Recommend View Controller-->
+        <!--Food Of Galaxy-->
         <scene sceneID="ydP-Ao-JXb">
             <objects>
                 <viewController storyboardIdentifier="RecommendViewController" id="w27-7r-Crb" customClass="RecommendViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -353,7 +353,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OKu-xE-9g7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lYZ-ts-fHb"/>
+                    <navigationItem key="navigationItem" title="Food Of Galaxy" id="lYZ-ts-fHb"/>
                     <connections>
                         <outlet property="tableView" destination="rfm-9A-y4R" id="pA1-Zb-w7b"/>
                     </connections>
@@ -362,7 +362,7 @@
             </objects>
             <point key="canvasLocation" x="2565.5999999999999" y="1243.6281859070466"/>
         </scene>
-        <!--Category View Controller-->
+        <!--Food Of Galaxy-->
         <scene sceneID="Jjc-GM-MnH">
             <objects>
                 <viewController storyboardIdentifier="CategoryViewController" id="wjS-ad-jJT" customClass="CategoryViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -497,7 +497,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zhh-yQ-zAw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5A4-2i-j1S"/>
+                    <navigationItem key="navigationItem" title="Food Of Galaxy" id="5A4-2i-j1S"/>
                     <connections>
                         <outlet property="b1" destination="9nf-yj-Dgx" id="kXa-3S-daE"/>
                         <outlet property="b10" destination="Wb3-lI-w1x" id="TdX-ue-yhX"/>
@@ -527,6 +527,40 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-hM-wWg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryListTableViewCell" id="P7P-4N-vSf" customClass="CategoryListTableViewCell" customModule="Amathon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P7P-4N-vSf" id="l6K-Up-vYi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsZ-hr-uvz">
+                                                    <rect key="frame" x="15" y="9" width="51" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e69-U5-nVc">
+                                                    <rect key="frame" x="318" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zsZ-hr-uvz" firstAttribute="leading" secondItem="l6K-Up-vYi" secondAttribute="leading" constant="15" id="2Nt-sh-M32"/>
+                                                <constraint firstItem="e69-U5-nVc" firstAttribute="centerY" secondItem="l6K-Up-vYi" secondAttribute="centerY" id="3jQ-t1-gVJ"/>
+                                                <constraint firstItem="zsZ-hr-uvz" firstAttribute="centerY" secondItem="l6K-Up-vYi" secondAttribute="centerY" id="LkP-aA-KsX"/>
+                                                <constraint firstAttribute="trailing" secondItem="e69-U5-nVc" secondAttribute="trailing" constant="15" id="M4M-ku-nme"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellName" destination="zsZ-hr-uvz" id="6PY-NM-2Yj"/>
+                                            <outlet property="cellRating" destination="e69-U5-nVc" id="7LJ-Gv-H2y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -539,6 +573,9 @@
                         <viewLayoutGuide key="safeArea" id="P0r-cm-Bb8"/>
                     </view>
                     <navigationItem key="navigationItem" id="eS2-bm-oA1"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ecf-hM-wWg" id="MM2-fD-bzU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Uv-at-8S0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

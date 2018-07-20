@@ -14,6 +14,7 @@
 		CC08AD4921020657006CB8F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08AD4821020657006CB8F3 /* HomeViewController.swift */; };
 		CC2A895C2102855000BCEACE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A895B2102855000BCEACE /* CategoryViewController.swift */; };
 		CC2A895F2102858900BCEACE /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A895E2102858900BCEACE /* CategoryListViewController.swift */; };
+		CC2A896121028F2200BCEACE /* CategoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A896021028F2100BCEACE /* CategoryListTableViewCell.swift */; };
 		CC2D661E2102149200ABEE9E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661D2102149200ABEE9E /* RecommendViewController.swift */; };
 		CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */; };
 		CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D66212102294C00ABEE9E /* SearchViewController.swift */; };
@@ -44,6 +45,7 @@
 		CC08AD4821020657006CB8F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC2A895B2102855000BCEACE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		CC2A895E2102858900BCEACE /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		CC2A896021028F2100BCEACE /* CategoryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewCell.swift; sourceTree = "<group>"; };
 		CC2D661D2102149200ABEE9E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		CC2D66212102294C00ABEE9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				CC2D662F21026BDD00ABEE9E /* MainCollectionViewCell.swift */,
 				CC2A895B2102855000BCEACE /* CategoryViewController.swift */,
 				CC2A895E2102858900BCEACE /* CategoryListViewController.swift */,
+				CC2A896021028F2100BCEACE /* CategoryListTableViewCell.swift */,
 			);
 			path = yong;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				84278724210278AB00ABC452 /* RatingViewController.swift in Sources */,
 				CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */,
 				CC2D663021026BDD00ABEE9E /* MainCollectionViewCell.swift in Sources */,
+				CC2A896121028F2200BCEACE /* CategoryListTableViewCell.swift in Sources */,
 				8439B37021023D85005FAD17 /* googleMapViewController.swift in Sources */,
 				CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */,
 				CC2D662A2102402100ABEE9E /* APIService.swift in Sources */,

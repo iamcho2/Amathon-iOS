@@ -110,9 +110,9 @@ struct MarketService: APIService{
     }
     
     
-    static func getcategorylist(serial: Int, completion: @escaping ([Market])->Void){
+    static func getcategorylist(cat: String, completion: @escaping ([Market])->Void){
         
-        let URL = url("")
+        let URL = url("/restaurants/\(cat.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")
         
         Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseData() { res in
             switch res.result{
@@ -121,14 +121,16 @@ struct MarketService: APIService{
                 print("00000000000000000000000000000000")
                 
                 if let value = res.result.value{
-                    if let message = JSON(value)["message"].string{
+                    if let message = JSON(value)["messages"].string{
                         if message == "SUCCESS"{
                             print("1111111111111111111111111111111111")
                             
                             
                             let decoder = JSONDecoder()
                             do{
+                                let marketdata = try decoder.decode(MarketData.self, from: value)
                                 
+                                completion(marketdata.restaurants)
                                 
                             } catch {
                                 print("catch.....")
