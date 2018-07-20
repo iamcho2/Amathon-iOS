@@ -10,7 +10,7 @@ import UIKit
 
 class RecommendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let imgArr = [#imageLiteral(resourceName: "best_01"),#imageLiteral(resourceName: "best_02"),#imageLiteral(resourceName: "best_03"),#imageLiteral(resourceName: "best_01"),#imageLiteral(resourceName: "best_02")]
+    let imgArr = [#imageLiteral(resourceName: "01"),#imageLiteral(resourceName: "02"),#imageLiteral(resourceName: "03"),#imageLiteral(resourceName: "01"),#imageLiteral(resourceName: "02")]
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -19,6 +19,10 @@ class RecommendViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.setContentOffset(.zero, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,7 +43,7 @@ class RecommendViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 179
+        return 462
     }
 
 

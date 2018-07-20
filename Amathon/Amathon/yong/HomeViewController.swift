@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var goButton: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         
         goButton.layer.cornerRadius = goButton.frame.height/2
     }
