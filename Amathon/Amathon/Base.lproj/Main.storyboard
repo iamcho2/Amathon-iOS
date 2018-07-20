@@ -340,14 +340,109 @@
             </objects>
             <point key="canvasLocation" x="2565.5999999999999" y="1243.6281859070466"/>
         </scene>
-        <!--Search View Controller-->
+        <!--View Controller-->
         <scene sceneID="Jjc-GM-MnH">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="wjS-ad-jJT" customClass="SearchViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wjS-ad-jJT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lj-bk-Y3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ubk-hG-yau">
+                                <rect key="frame" x="0.0" y="64" width="375" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nf-yj-Dgx">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_01"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJw-x6-F7g">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_02"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1J-My-09N">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="132"/>
+                                        <state key="normal" title="Button" image="recommend_03"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="Zcq-wj-Pmv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oiB-MO-yMY">
+                                <rect key="frame" x="0.0" y="196" width="375" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-z0-WGz">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_04"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tId-9d-QvC">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_05"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-vj-W17">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="132"/>
+                                        <state key="normal" title="Button" image="recommend_06"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="QMM-8L-TTs"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MxA-7q-LFQ">
+                                <rect key="frame" x="0.0" y="328" width="375" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o58-CQ-u8x">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_07"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-IZ-VvI">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_09"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-G5-j8a">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="132"/>
+                                        <state key="normal" title="Button" image="recommend_10"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="XzE-hc-Mw5"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="It4-4O-943">
+                                <rect key="frame" x="0.0" y="460" width="375" height="132"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-lI-w1x">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
+                                        <state key="normal" image="recommend_11"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX0-EB-DAs">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="132"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMC-Rk-Hdw">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="132"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="ymf-2u-UmS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oiB-MO-yMY" firstAttribute="top" secondItem="ubk-hG-yau" secondAttribute="bottom" id="BV7-3r-mWu"/>
+                            <constraint firstAttribute="trailing" secondItem="MxA-7q-LFQ" secondAttribute="trailing" id="E0A-is-vuj"/>
+                            <constraint firstItem="It4-4O-943" firstAttribute="top" secondItem="MxA-7q-LFQ" secondAttribute="bottom" id="NKb-s2-kis"/>
+                            <constraint firstItem="zhh-yQ-zAw" firstAttribute="trailing" secondItem="ubk-hG-yau" secondAttribute="trailing" id="OpN-9B-K26"/>
+                            <constraint firstItem="It4-4O-943" firstAttribute="leading" secondItem="zhh-yQ-zAw" secondAttribute="leading" id="TyR-Xh-n4a"/>
+                            <constraint firstItem="ubk-hG-yau" firstAttribute="leading" secondItem="zhh-yQ-zAw" secondAttribute="leading" id="VOh-nL-aWn"/>
+                            <constraint firstItem="MxA-7q-LFQ" firstAttribute="leading" secondItem="zhh-yQ-zAw" secondAttribute="leading" id="XtF-cm-IuC"/>
+                            <constraint firstAttribute="trailing" secondItem="oiB-MO-yMY" secondAttribute="trailing" id="bTs-6N-HVZ"/>
+                            <constraint firstItem="ubk-hG-yau" firstAttribute="top" secondItem="zhh-yQ-zAw" secondAttribute="top" id="gnx-N2-eds"/>
+                            <constraint firstAttribute="trailing" secondItem="It4-4O-943" secondAttribute="trailing" id="lL3-9D-SJ2"/>
+                            <constraint firstItem="MxA-7q-LFQ" firstAttribute="top" secondItem="oiB-MO-yMY" secondAttribute="bottom" id="mkh-yn-QYe"/>
+                            <constraint firstItem="oiB-MO-yMY" firstAttribute="leading" secondItem="8lj-bk-Y3K" secondAttribute="leading" id="mxe-gH-Juu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zhh-yQ-zAw"/>
                     </view>
                     <navigationItem key="navigationItem" id="5A4-2i-j1S"/>
@@ -549,6 +644,16 @@
         <image name="blue-dot" width="13" height="15"/>
         <image name="click_1" width="245" height="53"/>
         <image name="pin" width="76" height="87"/>
+        <image name="recommend_01" width="181" height="189"/>
+        <image name="recommend_02" width="179" height="189"/>
+        <image name="recommend_03" width="179" height="189"/>
+        <image name="recommend_04" width="181" height="191"/>
+        <image name="recommend_05" width="179" height="190"/>
+        <image name="recommend_06" width="179" height="190"/>
+        <image name="recommend_07" width="179" height="196"/>
+        <image name="recommend_09" width="181" height="195"/>
+        <image name="recommend_10" width="179" height="195"/>
+        <image name="recommend_11" width="181" height="184"/>
         <image name="red-dot-" width="13" height="15"/>
         <image name="star" width="64" height="64"/>
         <image name="yellow-dot" width="13" height="15"/>
