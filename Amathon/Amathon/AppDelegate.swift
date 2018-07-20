@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let navigationFont = UIFont(name: "AvenirNextCondensed-Bold", size: 20)!
                 let navigationAttributes = [NSAttributedStringKey.font : navigationFont, NSAttributedStringKey.foregroundColor : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)] as [NSAttributedStringKey : Any]
                 UINavigationBar.appearance().titleTextAttributes = navigationAttributes
+        
+        UIApplication.shared.statusBarStyle = .lightContent
 //
         
         GMSServices.provideAPIKey("AIzaSyCviI27WSTYkWsDLFv4B6NTYe5CG64bPCk")
