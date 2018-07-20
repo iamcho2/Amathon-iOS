@@ -37,8 +37,7 @@ class MapViewController: UIViewController {
     */
     @IBAction func arrowClicked(_ sender: Any) {
         if isOpen == false {
-            selectionView.heightAnchor.constraint(equalToConstant: 0).isActive = false
-            selectionView.heightAnchor.constraint(equalToConstant: 53).isActive = true
+            print("hello!")
             
                 isOpen = true
         }else{

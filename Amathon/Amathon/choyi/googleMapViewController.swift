@@ -21,11 +21,18 @@ class googleMapViewController: UIViewController {
         view = mapView
         
         // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 37.55, longitude: 126.97)
-        marker.title = "Seoul"
-        marker.snippet = "Korea"
-        marker.map = mapView
+        let marker1 = GMSMarker()
+        marker1.position = CLLocationCoordinate2D(latitude: 37.55, longitude: 126.97)
+        marker1.title = "Seoul"
+        marker1.snippet = "Korea"
+        marker1.map = mapView
+        
+        // Create marker2 for testing
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: 37.50, longitude: 127.03)
+        marker2.title = "gangnam"
+        marker2.snippet = "finance center"
+        marker2.map = mapView
         
         // Do any additional setup after loading the view.
     }
