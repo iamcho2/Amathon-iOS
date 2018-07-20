@@ -23,19 +23,28 @@ class DetailViewController: UIViewController {
     var m_name = ""
     var m_address = ""
     var m_category = ""
-    var m_rating = ""
+    var m_rating = 0.0
     var m_phone = ""
     var m_description = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        marketImage.kf.setImage(with: URL(string: imgArr[size-indexPath.row-1]),placeholder: UIImage())
+        marketImage.kf.setImage(with: URL(string: m_image),placeholder: UIImage())
+        marketName.text = m_name
+        marketAddress.text = m_address
+        marketCategory.text = m_category
+        marketRating.text = "\(m_rating)"
+        marketPhone.text = m_phone
+        marketDes.text = m_description
     }
 
 
     @IBAction func goStar(_ sender: Any) {
     }
     
-
+    @IBAction func dismissAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
