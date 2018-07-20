@@ -620,6 +620,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goStar:" destination="MZP-dF-baZ" eventType="touchUpInside" id="Dt5-Zd-a0h"/>
+                                    <segue destination="jqa-20-pt0" kind="presentation" id="R4M-x0-tme"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -658,6 +659,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8v-hp-IcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4140" y="664.31784107946032"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o0c-kP-Iod">
+            <objects>
+                <viewController id="jqa-20-pt0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MXW-EZ-t1C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TLw-Zv-kyN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZd-in-ars" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4847" y="664"/>
         </scene>
     </scenes>
     <resources>
