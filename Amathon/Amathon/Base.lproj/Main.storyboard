@@ -47,11 +47,11 @@
             </objects>
             <point key="canvasLocation" x="143" y="806"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="9ei-bi-FTb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMR-9v-f6X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oql-jF-EIV"/>
+                    <tabBarItem key="tabBarItem" title="" id="oql-jF-EIV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tEE-Os-eiz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
