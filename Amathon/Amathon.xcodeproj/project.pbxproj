@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */; };
 		CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150512101C46C004D1F1D /* AppDelegate.swift */; };
 		CC6150542101C46C004D1F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150532101C46C004D1F1D /* ViewController.swift */; };
 		CC6150572101C46C004D1F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6150552101C46C004D1F1D /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DA6D20723F1297B0391CA75 /* Pods-Amathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.debug.xcconfig"; sourceTree = "<group>"; };
+		A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.release.xcconfig"; sourceTree = "<group>"; };
 		CC61504E2101C46C004D1F1D /* Amathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6150512101C46C004D1F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6150532101C46C004D1F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E001E9DED936AEB00CF2BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1C789D3B1EA6829F541736 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DA6D20723F1297B0391CA75 /* Pods-Amathon.debug.xcconfig */,
+				C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC6150452101C46C004D1F1D = {
 			isa = PBXGroup;
 			children = (
 				CC6150502101C46C004D1F1D /* Amathon */,
 				CC61504F2101C46C004D1F1D /* Products */,
+				AB1C789D3B1EA6829F541736 /* Pods */,
+				2E001E9DED936AEB00CF2BB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC6150602101C46D004D1F1D /* Build configuration list for PBXNativeTarget "Amathon" */;
 			buildPhases = (
+				98C1D0BF91D12006E34FD0B4 /* [CP] Check Pods Manifest.lock */,
 				CC61504A2101C46C004D1F1D /* Sources */,
 				CC61504B2101C46C004D1F1D /* Frameworks */,
 				CC61504C2101C46C004D1F1D /* Resources */,
+				B6552B043FF25C5AAA08BD50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98C1D0BF91D12006E34FD0B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6552B043FF25C5AAA08BD50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Amathon/Pods-Amathon-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Amathon/Pods-Amathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC61504A2101C46C004D1F1D /* Sources */ = {
@@ -278,6 +345,7 @@
 		};
 		CC6150612101C46D004D1F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA6D20723F1297B0391CA75 /* Pods-Amathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +363,7 @@
 		};
 		CC6150622101C46D004D1F1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
