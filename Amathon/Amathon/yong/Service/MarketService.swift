@@ -110,5 +110,46 @@ struct MarketService: APIService{
     }
     
     
+    static func getcategorylist(serial: Int, completion: @escaping ([Market])->Void){
+        
+        let URL = url("")
+        
+        Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseData() { res in
+            switch res.result{
+            case .success:
+                
+                print("00000000000000000000000000000000")
+                
+                if let value = res.result.value{
+                    if let message = JSON(value)["message"].string{
+                        if message == "SUCCESS"{
+                            print("1111111111111111111111111111111111")
+                            
+                            
+                            let decoder = JSONDecoder()
+                            do{
+                                
+                                
+                            } catch {
+                                print("catch.....")
+                            }
+                            
+                            
+                        }else{
+                            
+                        }
+                    }
+                }
+                
+                break
+            case .failure(let err):
+                print(err.localizedDescription)
+                break
+            }
+        }
+        
+    }
+    
+    
     
 }

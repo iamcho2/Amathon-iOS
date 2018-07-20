@@ -362,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="2565.5999999999999" y="1243.6281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="Jjc-GM-MnH">
             <objects>
-                <viewController id="wjS-ad-jJT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryViewController" id="wjS-ad-jJT" customClass="CategoryViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8lj-bk-Y3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,14 +376,23 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nf-yj-Dgx">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_01"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="XTW-B0-5Gy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJw-x6-F7g">
                                         <rect key="frame" x="125" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_02"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="P1V-Nb-fl3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1J-My-09N">
                                         <rect key="frame" x="250" y="0.0" width="125" height="132"/>
                                         <state key="normal" title="Button" image="recommend_03"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="WDo-hG-WDV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -396,14 +405,23 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-z0-WGz">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_04"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="NeH-hk-6Qb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tId-9d-QvC">
                                         <rect key="frame" x="125" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_05"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="56f-ab-POV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-vj-W17">
                                         <rect key="frame" x="250" y="0.0" width="125" height="132"/>
                                         <state key="normal" title="Button" image="recommend_06"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="ggL-0M-Fe1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -416,14 +434,23 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o58-CQ-u8x">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_07"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="njP-ct-eT7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-IZ-VvI">
                                         <rect key="frame" x="125" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_09"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="iVW-ZI-TCY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-G5-j8a">
                                         <rect key="frame" x="250" y="0.0" width="125" height="132"/>
                                         <state key="normal" title="Button" image="recommend_10"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="9Gb-cy-0En"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -436,6 +463,9 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-lI-w1x">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="132"/>
                                         <state key="normal" image="recommend_11"/>
+                                        <connections>
+                                            <action selector="click:" destination="wjS-ad-jJT" eventType="touchUpInside" id="wae-4D-ku3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX0-EB-DAs">
                                         <rect key="frame" x="125" y="0.0" width="125" height="132"/>
@@ -468,10 +498,51 @@
                         <viewLayoutGuide key="safeArea" id="zhh-yQ-zAw"/>
                     </view>
                     <navigationItem key="navigationItem" id="5A4-2i-j1S"/>
+                    <connections>
+                        <outlet property="b1" destination="9nf-yj-Dgx" id="kXa-3S-daE"/>
+                        <outlet property="b10" destination="Wb3-lI-w1x" id="TdX-ue-yhX"/>
+                        <outlet property="b2" destination="gJw-x6-F7g" id="I1F-TY-0C3"/>
+                        <outlet property="b3" destination="R1J-My-09N" id="NSX-Ya-0M7"/>
+                        <outlet property="b4" destination="lRv-z0-WGz" id="bsu-si-77A"/>
+                        <outlet property="b5" destination="tId-9d-QvC" id="BHz-md-yai"/>
+                        <outlet property="b6" destination="GTv-vj-W17" id="aCO-KB-h6a"/>
+                        <outlet property="b7" destination="o58-CQ-u8x" id="WSR-jb-WSs"/>
+                        <outlet property="b8" destination="fXt-IZ-VvI" id="XfK-k6-CK8"/>
+                        <outlet property="b9" destination="rM6-G5-j8a" id="S2H-uh-Js7"/>
+                        <segue destination="yGG-08-sOy" kind="push" id="VlD-iq-I92"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9U-zP-jkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2565.5999999999999" y="2067.6161919040483"/>
+        </scene>
+        <!--Category List View Controller-->
+        <scene sceneID="IWx-U9-A3e">
+            <objects>
+                <viewController storyboardIdentifier="CategoryListViewController" id="yGG-08-sOy" customClass="CategoryListViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Geb-MJ-BQc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-hM-wWg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ecf-hM-wWg" firstAttribute="top" secondItem="P0r-cm-Bb8" secondAttribute="top" id="SDJ-eg-ZYV"/>
+                            <constraint firstItem="P0r-cm-Bb8" firstAttribute="bottom" secondItem="Ecf-hM-wWg" secondAttribute="bottom" id="hPG-um-KpX"/>
+                            <constraint firstItem="P0r-cm-Bb8" firstAttribute="trailing" secondItem="Ecf-hM-wWg" secondAttribute="trailing" id="jya-S9-WEf"/>
+                            <constraint firstItem="Ecf-hM-wWg" firstAttribute="leading" secondItem="P0r-cm-Bb8" secondAttribute="leading" id="vrR-RD-QrH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P0r-cm-Bb8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eS2-bm-oA1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Uv-at-8S0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="2068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7bh-1y-E78">
@@ -600,14 +671,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MP-c4-gTc">
-                                <rect key="frame" x="310" y="20" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="dismiss"/>
-                                <connections>
-                                    <action selector="dismissAction:" destination="MZP-dF-baZ" eventType="touchUpInside" id="NCi-UM-Rt0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-mf-9jb">
                                 <rect key="frame" x="118" y="617" width="140" height="30"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.48627450979999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -620,6 +683,14 @@
                                 </state>
                                 <connections>
                                     <action selector="goStar:" destination="MZP-dF-baZ" eventType="touchUpInside" id="Dt5-Zd-a0h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MP-c4-gTc">
+                                <rect key="frame" x="312" y="32" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="MZP-dF-baZ" eventType="touchUpInside" id="NCi-UM-Rt0"/>
                                 </connections>
                             </button>
                         </subviews>
