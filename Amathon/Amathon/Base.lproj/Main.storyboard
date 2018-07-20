@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="1606" y="-361"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="K19-RX-2o5">
             <objects>
-                <viewController id="0J8-ne-Cut" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="0J8-ne-Cut" customClass="MapViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="crZ-ie-qZm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

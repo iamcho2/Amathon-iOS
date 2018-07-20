@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCEC82101FF3600113948 /* MapViewController.swift */; };
 		C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */; };
 		CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150512101C46C004D1F1D /* AppDelegate.swift */; };
 		CC6150542101C46C004D1F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150532101C46C004D1F1D /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4DA6D20723F1297B0391CA75 /* Pods-Amathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.debug.xcconfig"; sourceTree = "<group>"; };
+		84BBCEC82101FF3600113948 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.release.xcconfig"; sourceTree = "<group>"; };
 		CC61504E2101C46C004D1F1D /* Amathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 		CC6150632101CC53004D1F1D /* choyi */ = {
 			isa = PBXGroup;
 			children = (
+				84BBCEC82101FF3600113948 /* MapViewController.swift */,
 			);
 			path = choyi;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6150542101C46C004D1F1D /* ViewController.swift in Sources */,
+				84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */,
 				CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,13 +400,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5Y35W5FL6;
+				DEVELOPMENT_TEAM = EQ7Z68Z2F2;
 				INFOPLIST_FILE = Amathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hello.com.Amathon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choyi.Amathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,13 +420,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5Y35W5FL6;
+				DEVELOPMENT_TEAM = EQ7Z68Z2F2;
 				INFOPLIST_FILE = Amathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hello.com.Amathon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choyi.Amathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
