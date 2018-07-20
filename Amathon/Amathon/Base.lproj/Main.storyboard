@@ -161,23 +161,26 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-RK-pIu">
-                                        <rect key="frame" x="325" y="21" width="30" height="30"/>
-                                        <state key="normal" title="분류">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-qA-sW6">
+                                        <rect key="frame" x="265" y="28" width="100" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="yQZ-F0-Cd7"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.16645302870000001" blue="0.033768593399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="top" secondItem="Xk8-FX-FAC" secondAttribute="top" constant="5" id="BVK-hQ-bvK"/>
+                                    <constraint firstItem="iqh-qA-sW6" firstAttribute="centerY" secondItem="Xk8-FX-FAC" secondAttribute="centerY" id="Ebq-0l-VnA"/>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="leading" secondItem="Xk8-FX-FAC" secondAttribute="leading" id="LBK-PJ-Ypc"/>
-                                    <constraint firstItem="K4J-RK-pIu" firstAttribute="centerY" secondItem="Xk8-FX-FAC" secondAttribute="centerY" id="Ru8-d0-k1b"/>
+                                    <constraint firstAttribute="trailing" secondItem="iqh-qA-sW6" secondAttribute="trailing" constant="10" id="SfK-cu-QQU"/>
                                     <constraint firstAttribute="height" constant="73" id="ThN-QW-jDM"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="top" secondItem="lSV-bs-H5V" secondAttribute="top" id="ZTA-MH-wLF"/>
                                     <constraint firstItem="lSV-bs-H5V" firstAttribute="leading" secondItem="Jef-hu-el0" secondAttribute="trailing" constant="8" id="dGf-Ke-jDD"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="bottom" secondItem="lSV-bs-H5V" secondAttribute="bottom" id="hod-UE-awa"/>
-                                    <constraint firstAttribute="trailing" secondItem="K4J-RK-pIu" secondAttribute="trailing" constant="20" id="jhR-HG-rRh"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="leading" secondItem="lSV-bs-H5V" secondAttribute="trailing" id="qgk-RJ-S7T"/>
                                     <constraint firstItem="lSV-bs-H5V" firstAttribute="bottom" secondItem="Jef-hu-el0" secondAttribute="bottom" id="tEQ-9o-PL9"/>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="centerY" secondItem="Xk8-FX-FAC" secondAttribute="centerY" id="tNt-Mk-xn0"/>
@@ -293,6 +296,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Food Of Galaxy" id="D6u-Pd-95E"/>
                     <connections>
+                        <outlet property="cateTextField" destination="iqh-qA-sW6" id="MWa-Bd-Yjf"/>
                         <outlet property="heightConstraint" destination="Sbn-Gn-BV6" id="ywQ-WQ-8nD"/>
                         <outlet property="selectionView" destination="UcG-27-3ZJ" id="2Wb-Xx-Isq"/>
                         <outletCollection property="pinColors" destination="AsJ-So-B98" collectionClass="NSMutableArray" id="b8f-AX-HSE"/>
@@ -641,7 +645,7 @@
         <!--Google Map View Controller-->
         <scene sceneID="Xip-7z-2LJ">
             <objects>
-                <viewController id="4h4-jZ-pE0" customClass="googleMapViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="googleMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4h4-jZ-pE0" customClass="googleMapViewController" customModule="Amathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKd-Ek-dZL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
