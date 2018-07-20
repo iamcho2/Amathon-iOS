@@ -14,6 +14,8 @@ class RatingViewController: UIViewController {
     @IBOutlet weak var taste: CosmosView!
     @IBOutlet weak var price: CosmosView!
     
+    var mySerial : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +30,14 @@ class RatingViewController: UIViewController {
     @IBAction func didConfirmClicked(_ sender: Any) {
         
         print(interior.rating)
+        
+        
+        MarketService.stardto(interior: interior.rating, price: price.rating, taste: taste.rating, serialNum: mySerial) { (msg) in
+            if msg == "success"{
+                let tab = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainTab")
+                self.present(tab, animated: true, completion: nil)
+            }
+        }
     }
     
     /*

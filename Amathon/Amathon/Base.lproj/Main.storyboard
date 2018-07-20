@@ -93,7 +93,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gma-AY-H0X">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="04u-D7-B0N" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTab" automaticallyAdjustsScrollViewInsets="NO" id="04u-D7-B0N" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g9q-ol-Dwk">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -620,7 +620,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goStar:" destination="MZP-dF-baZ" eventType="touchUpInside" id="Dt5-Zd-a0h"/>
-                                    <segue destination="jqa-20-pt0" kind="presentation" id="R4M-x0-tme"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -778,12 +777,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZgG-rv-Ezc"/>
                                 </constraints>
-                                <state key="normal" title="Button" backgroundImage="redColor">
+                                <state key="normal" title="제출" backgroundImage="redColor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="didConfirmClicked:" destination="jqa-20-pt0" eventType="touchUpInside" id="EaM-q8-xL7"/>
-                                    <segue destination="04u-D7-B0N" kind="show" id="nmJ-jr-MR6"/>
                                 </connections>
                             </button>
                         </subviews>

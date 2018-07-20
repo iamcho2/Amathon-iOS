@@ -27,8 +27,9 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
         // Creates a marker in the center of the map.
         let marker1 = GMSMarker()
         marker1.position = CLLocationCoordinate2D(latitude: 37.4923661, longitude: 127.0205431)
-        marker1.title = "Seoul"
-        marker1.snippet = "Korea"
+        marker1.title = "현위치"
+        marker1.icon = #imageLiteral(resourceName: "me")
+        //marker1.snippet = "Korea"
         marker1.map = mapView
         
         getMarket()
@@ -68,7 +69,7 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
             } else if rating <= 3.0 {
                 marker.icon = GMSMarker.markerImage(with: .blue)
             } else if rating <= 4.0 {
-                marker.icon = GMSMarker.markerImage(with: .yellow)
+                marker.icon = GMSMarker.markerImage(with: #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1))
             }else {
                 marker.icon = GMSMarker.markerImage(with: .red)
             }
@@ -88,6 +89,7 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
                 vc.m_rating = marketArr[i].rating.totalRating
                 vc.m_category = marketArr[i].category ?? ""
                 vc.m_description = marketArr[i].description!
+                vc.m_serial = marketArr[i].serialNum
             }
         }
         

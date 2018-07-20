@@ -26,6 +26,7 @@ class DetailViewController: UIViewController {
     var m_rating = 0.0
     var m_phone = ""
     var m_description = ""
+    var m_serial : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,11 @@ class DetailViewController: UIViewController {
 
 
     @IBAction func goStar(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RatingViewController") as! RatingViewController
+        
+        vc.mySerial = m_serial
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
     @IBAction func dismissAction(_ sender: Any) {
