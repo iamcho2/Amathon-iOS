@@ -11,8 +11,13 @@ import GoogleMaps
 import GooglePlaces
 
 class MapViewController: UIViewController {
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var selectionView: UIView!
     var isOpen = true
+    
+    @IBOutlet var pinColors: [UIImageView]!
+    @IBOutlet var pinLabels: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +42,21 @@ class MapViewController: UIViewController {
     */
     @IBAction func arrowClicked(_ sender: Any) {
         if isOpen == false {
-            print("hello!")
-            
+            heightConstraint.constant = 53
+
                 isOpen = true
         }else{
-            selectionView.heightAnchor.constraint(equalToConstant: 53).isActive = false
-            selectionView.heightAnchor.constraint(equalToConstant: 0).isActive = true
-            
+            heightConstraint.constant = 0
+
                 isOpen = false
+        }
+        
+        
+        pinColors.forEach { (image) in
+            image.isHidden = !image.isHidden
+        }
+        pinLabels.forEach { (label) in
+            label.isHidden = !label.isHidden
         }
     }
     
