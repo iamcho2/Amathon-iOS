@@ -14,6 +14,7 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
     
     var marketArr = [Market]()
     var mapView: GMSMapView!
+    var category = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
         //marker1.snippet = "Korea"
         marker1.map = mapView
         
-        getMarket()
+        getMarket(orderby: "일식")
         
         // Create marker2 for testing
 //        let marker2 = GMSMarker()
@@ -44,8 +45,8 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func getMarket(){
-        MarketService.market(lat: "37.4923661", lon: "127.0205431", orderby: "일식") { (arr) in
+    func getMarket(orderby: String){
+        MarketService.market(lat: "37.4923661", lon: "127.0205431", orderby: orderby) { (arr) in
             self.marketArr = arr
             
             self.setMarker(arr: self.marketArr)
