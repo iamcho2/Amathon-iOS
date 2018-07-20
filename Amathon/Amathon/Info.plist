@@ -4,10 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NanumSquareB.otf</string>
-		<string>NanumSquareEB.otf</string>
-		<string>NanumSquareL.otf</string>
-		<string>NanumSquareR.otf</string>
+		<string>NanumSquareB.ttf</string>
+		<string>NanumSquareEB.ttf</string>
+		<string>NanumSquareL.ttf</string>
+		<string>NanumSquareR.ttf</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
