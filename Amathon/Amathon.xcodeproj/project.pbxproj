@@ -12,6 +12,8 @@
 		84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCEC82101FF3600113948 /* MapViewController.swift */; };
 		C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */; };
 		CC08AD4921020657006CB8F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08AD4821020657006CB8F3 /* HomeViewController.swift */; };
+		CC2A895C2102855000BCEACE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A895B2102855000BCEACE /* CategoryViewController.swift */; };
+		CC2A895F2102858900BCEACE /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A895E2102858900BCEACE /* CategoryListViewController.swift */; };
 		CC2D661E2102149200ABEE9E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661D2102149200ABEE9E /* RecommendViewController.swift */; };
 		CC2D66202102150A00ABEE9E /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */; };
 		CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D66212102294C00ABEE9E /* SearchViewController.swift */; };
@@ -40,6 +42,8 @@
 		A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.release.xcconfig"; sourceTree = "<group>"; };
 		CC08AD4821020657006CB8F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CC2A895B2102855000BCEACE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CC2A895E2102858900BCEACE /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		CC2D661D2102149200ABEE9E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		CC2D66212102294C00ABEE9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				CC2D66212102294C00ABEE9E /* SearchViewController.swift */,
 				CC2D662D21025EEF00ABEE9E /* DetailViewController.swift */,
 				CC2D662F21026BDD00ABEE9E /* MainCollectionViewCell.swift */,
+				CC2A895B2102855000BCEACE /* CategoryViewController.swift */,
+				CC2A895E2102858900BCEACE /* CategoryListViewController.swift */,
 			);
 			path = yong;
 			sourceTree = "<group>";
@@ -328,6 +334,8 @@
 				CC2D662C2102404F00ABEE9E /* MarketService.swift in Sources */,
 				CC6150542101C46C004D1F1D /* ViewController.swift in Sources */,
 				CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */,
+				CC2A895F2102858900BCEACE /* CategoryListViewController.swift in Sources */,
+				CC2A895C2102855000BCEACE /* CategoryViewController.swift in Sources */,
 				84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */,
 				CC2D662521023E8B00ABEE9E /* Market.swift in Sources */,
 				84278724210278AB00ABC452 /* RatingViewController.swift in Sources */,
