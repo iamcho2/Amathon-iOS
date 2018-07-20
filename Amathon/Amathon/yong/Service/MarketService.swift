@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct MarketService: APIService{
     
-    static func market(lat: String, lon: String, completion: @escaping ([Market])->Void){
+    static func market(lat: String, lon: String, orderby: String, completion: @escaping ([Market])->Void){
         
         let URL = url("/restaurants")
         
@@ -20,7 +20,7 @@ struct MarketService: APIService{
             "lat" : lat,
             "lon" : lon,
             "orderby" : "distance",
-            "searchKeyword" : "일식"
+            "searchKeyword" : orderby
         ]
         
         Alamofire.request(URL, method: .get, parameters: body, encoding: URLEncoding.queryString, headers: nil).responseData() { res in
@@ -62,4 +62,53 @@ struct MarketService: APIService{
         }
         
     }
+    
+    
+    
+    
+    static func stardto(interior: Double, price: Double, taste: Double, serialNum: Int, completion: @escaping (_ message: String)->Void){
+        
+        let URL = url("/restaurants")
+        
+        let body: [String: Any] = [
+            "interiorRating" : interior,
+            "priceRating" : price,
+            "serialNum" : serialNum,
+            "tasteRating" : taste
+        ]
+        
+        
+        Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).responseData() { res in
+            switch res.result{
+            case .success:
+                
+                print("0000000000000000000000")
+                
+                if let value = res.result.value{
+                    if let message = JSON(value)["message"].string{
+                        if message == "SUCCESS"{
+                            
+                            print("1111111111111111111111111111")
+
+                            
+                            completion("success")
+                            
+                            
+                        }else{
+                            
+                        }
+                    }
+                }
+                
+                break
+            case .failure(let err):
+                print(err.localizedDescription)
+                break
+            }
+        }
+        
+    }
+    
+    
+    
 }

@@ -18,6 +18,7 @@
 		CC2D662721023F6D00ABEE9E /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662621023F6D00ABEE9E /* MarketData.swift */; };
 		CC2D662A2102402100ABEE9E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D66292102402100ABEE9E /* APIService.swift */; };
 		CC2D662C2102404F00ABEE9E /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662B2102404F00ABEE9E /* MarketService.swift */; };
+		CC2D662E21025EEF00ABEE9E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D662D21025EEF00ABEE9E /* DetailViewController.swift */; };
 		CC3666F22101FF10002681DE /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */; };
 		CC3666F32101FF10002681DE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */; };
 		CC3666F42101FF10002681DE /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666F02101FF0E002681DE /* NanumSquareB.ttf */; };
@@ -43,6 +44,7 @@
 		CC2D662621023F6D00ABEE9E /* MarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
 		CC2D66292102402100ABEE9E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CC2D662B2102404F00ABEE9E /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
+		CC2D662D21025EEF00ABEE9E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
 		CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
 		CC3666F02101FF0E002681DE /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				CC2D661D2102149200ABEE9E /* RecommendViewController.swift */,
 				CC2D661F2102150A00ABEE9E /* RecommendTableViewCell.swift */,
 				CC2D66212102294C00ABEE9E /* SearchViewController.swift */,
+				CC2D662D21025EEF00ABEE9E /* DetailViewController.swift */,
 			);
 			path = yong;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2D662E21025EEF00ABEE9E /* DetailViewController.swift in Sources */,
 				CC2D662C2102404F00ABEE9E /* MarketService.swift in Sources */,
 				CC6150542101C46C004D1F1D /* ViewController.swift in Sources */,
 				CC2D66222102294C00ABEE9E /* SearchViewController.swift in Sources */,
