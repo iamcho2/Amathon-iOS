@@ -26,10 +26,6 @@
 		CC6150582101C46D004D1F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC61505B2101C46D004D1F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC61505D2101C46D004D1F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC6150672101F3EF004D1F1D /* NanumSquareR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareR.otf; path = "../../../../../Downloads/폰트/NanumSquareR.otf"; sourceTree = "<group>"; };
-		CC6150692101F3F0004D1F1D /* NanumSquareEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareEB.otf; path = "../../../../../Downloads/폰트/NanumSquareEB.otf"; sourceTree = "<group>"; };
-		CC61506B2101F3F1004D1F1D /* NanumSquareL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareL.otf; path = "../../../../../Downloads/폰트/NanumSquareL.otf"; sourceTree = "<group>"; };
-		CC61506C2101F3F2004D1F1D /* NanumSquareB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareB.otf; path = "../../../../../Downloads/폰트/NanumSquareB.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +108,6 @@
 		CC6150652101F3B4004D1F1D /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				CC61506C2101F3F2004D1F1D /* NanumSquareB.otf */,
-				CC6150692101F3F0004D1F1D /* NanumSquareEB.otf */,
-				CC61506B2101F3F1004D1F1D /* NanumSquareL.otf */,
-				CC6150672101F3EF004D1F1D /* NanumSquareR.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
