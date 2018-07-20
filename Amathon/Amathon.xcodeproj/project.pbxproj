@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		84BBCEC92101FF3600113948 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBCEC82101FF3600113948 /* MapViewController.swift */; };
 		C4022FF889C6F93845AC3DA1 /* Pods_Amathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */; };
+		CC3666F22101FF10002681DE /* NanumSquareR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */; };
+		CC3666F32101FF10002681DE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */; };
+		CC3666F42101FF10002681DE /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666F02101FF0E002681DE /* NanumSquareB.ttf */; };
+		CC3666F52101FF10002681DE /* NanumSquareL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3666F12101FF0F002681DE /* NanumSquareL.ttf */; };
 		CC6150522101C46C004D1F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150512101C46C004D1F1D /* AppDelegate.swift */; };
 		CC6150542101C46C004D1F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6150532101C46C004D1F1D /* ViewController.swift */; };
 		CC6150572101C46C004D1F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6150552101C46C004D1F1D /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 		84BBCEC82101FF3600113948 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A67BFE0EFDEEC6C30FCD5DC0 /* Pods_Amathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F6EF67097FBCB14E559EE /* Pods-Amathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amathon/Pods-Amathon.release.xcconfig"; sourceTree = "<group>"; };
+		CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareR.ttf; sourceTree = "<group>"; };
+		CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareEB.ttf; sourceTree = "<group>"; };
+		CC3666F02101FF0E002681DE /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareB.ttf; sourceTree = "<group>"; };
+		CC3666F12101FF0F002681DE /* NanumSquareL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareL.ttf; sourceTree = "<group>"; };
 		CC61504E2101C46C004D1F1D /* Amathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6150512101C46C004D1F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6150532101C46C004D1F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 		CC6150652101F3B4004D1F1D /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				CC3666F02101FF0E002681DE /* NanumSquareB.ttf */,
+				CC3666EF2101FF0D002681DE /* NanumSquareEB.ttf */,
+				CC3666F12101FF0F002681DE /* NanumSquareL.ttf */,
+				CC3666EE2101FF0D002681DE /* NanumSquareR.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -178,7 +190,11 @@
 			files = (
 				CC61505C2101C46D004D1F1D /* LaunchScreen.storyboard in Resources */,
 				CC6150592101C46D004D1F1D /* Assets.xcassets in Resources */,
+				CC3666F22101FF10002681DE /* NanumSquareR.ttf in Resources */,
+				CC3666F32101FF10002681DE /* NanumSquareEB.ttf in Resources */,
+				CC3666F42101FF10002681DE /* NanumSquareB.ttf in Resources */,
 				CC6150572101C46C004D1F1D /* Main.storyboard in Resources */,
+				CC3666F52101FF10002681DE /* NanumSquareL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
