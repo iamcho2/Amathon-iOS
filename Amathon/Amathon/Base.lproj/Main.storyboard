@@ -139,15 +139,23 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-RK-pIu">
+                                        <rect key="frame" x="325" y="21" width="30" height="30"/>
+                                        <state key="normal" title="분류">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.16645302870000001" blue="0.033768593399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="top" secondItem="Xk8-FX-FAC" secondAttribute="top" constant="5" id="BVK-hQ-bvK"/>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="leading" secondItem="Xk8-FX-FAC" secondAttribute="leading" id="LBK-PJ-Ypc"/>
+                                    <constraint firstItem="K4J-RK-pIu" firstAttribute="centerY" secondItem="Xk8-FX-FAC" secondAttribute="centerY" id="Ru8-d0-k1b"/>
                                     <constraint firstAttribute="height" constant="73" id="ThN-QW-jDM"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="top" secondItem="lSV-bs-H5V" secondAttribute="top" id="ZTA-MH-wLF"/>
                                     <constraint firstItem="lSV-bs-H5V" firstAttribute="leading" secondItem="Jef-hu-el0" secondAttribute="trailing" constant="8" id="dGf-Ke-jDD"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="bottom" secondItem="lSV-bs-H5V" secondAttribute="bottom" id="hod-UE-awa"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4J-RK-pIu" secondAttribute="trailing" constant="20" id="jhR-HG-rRh"/>
                                     <constraint firstItem="hT4-KK-hdi" firstAttribute="leading" secondItem="lSV-bs-H5V" secondAttribute="trailing" id="qgk-RJ-S7T"/>
                                     <constraint firstItem="lSV-bs-H5V" firstAttribute="bottom" secondItem="Jef-hu-el0" secondAttribute="bottom" id="tEQ-9o-PL9"/>
                                     <constraint firstItem="Jef-hu-el0" firstAttribute="centerY" secondItem="Xk8-FX-FAC" secondAttribute="centerY" id="tNt-Mk-xn0"/>
@@ -418,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hlj-sf-CVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3289" y="569"/>
+            <point key="canvasLocation" x="3324" y="707"/>
         </scene>
     </scenes>
     <resources>
