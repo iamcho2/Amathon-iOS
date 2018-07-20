@@ -9,7 +9,6 @@
 import Foundation
 
 struct Market: Codable{
-    var adress: String
     var serialNum: Int
     var name: String
     var lat: String

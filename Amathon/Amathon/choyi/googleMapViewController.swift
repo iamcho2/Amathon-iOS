@@ -78,8 +78,21 @@ class googleMapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainNaviVC")
-        self.present(mainVC, animated: true, completion: nil)
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        for i in 0..<self.marketArr.count{
+            if marketArr[i].name == marker.title{
+                vc.m_name = marketArr[i].name
+                vc.m_address = marketArr[i].address!
+                vc.m_phone = marketArr[i].phoneNum!
+                vc.m_rating = marketArr[i].rating.totalRating
+                vc.m_category = marketArr[i].category ?? ""
+                vc.m_description = marketArr[i].description!
+            }
+        }
+        
+        
+        self.present(vc, animated: true, completion: nil)
     }
 
 }
