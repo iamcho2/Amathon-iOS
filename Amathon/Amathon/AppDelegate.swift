@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
 //        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.1960784314, blue: 0.2039215686, alpha: 1)
-//        UITabBar.appearance().unselectedItemTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        UITabBar.appearance().tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 //        
         
         GMSServices.provideAPIKey("AIzaSyCviI27WSTYkWsDLFv4B6NTYe5CG64bPCk")
