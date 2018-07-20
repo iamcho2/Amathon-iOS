@@ -21,12 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.1647058824, green: 0.1960784314, blue: 0.2039215686, alpha: 1)
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.02352941176, green: 0.02745098039, blue: 0.0431372549, alpha: 1)
         UINavigationBar.appearance().tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-//        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.1960784314, blue: 0.2039215686, alpha: 1)
         UITabBar.appearance().tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-//        
+        
+                let navigationFont = UIFont(name: "AvenirNextCondensed-Bold", size: 20)!
+                let navigationAttributes = [NSAttributedStringKey.font : navigationFont, NSAttributedStringKey.foregroundColor : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)] as [NSAttributedStringKey : Any]
+                UINavigationBar.appearance().titleTextAttributes = navigationAttributes
+//
         
         GMSServices.provideAPIKey("AIzaSyCviI27WSTYkWsDLFv4B6NTYe5CG64bPCk")
         GMSPlacesClient.provideAPIKey("AIzaSyCviI27WSTYkWsDLFv4B6NTYe5CG64bPCk")
