@@ -78,6 +78,8 @@
 		CC6150502101C46C004D1F1D /* Amathon */ = {
 			isa = PBXGroup;
 			children = (
+				CC6150642101CC6A004D1F1D /* yong */,
+				CC6150632101CC53004D1F1D /* choyi */,
 				CC6150512101C46C004D1F1D /* AppDelegate.swift */,
 				CC6150532101C46C004D1F1D /* ViewController.swift */,
 				CC6150552101C46C004D1F1D /* Main.storyboard */,
@@ -86,6 +88,20 @@
 				CC61505D2101C46D004D1F1D /* Info.plist */,
 			);
 			path = Amathon;
+			sourceTree = "<group>";
+		};
+		CC6150632101CC53004D1F1D /* choyi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = choyi;
+			sourceTree = "<group>";
+		};
+		CC6150642101CC6A004D1F1D /* yong */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = yong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
